@@ -1,4 +1,5 @@
-
-<mat-form-field>
-  <input matInput placeholder="What should I do?" >
+<mat-form-field class="inputdo">
+  <input matInput placeholder="What should I do?" [(ngModel)]="todoText" >
 </mat-form-field>
+
+<button mat-raised-button (click)=onAddTodo()>ADD</button>

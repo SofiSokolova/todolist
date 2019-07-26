@@ -8,6 +8,7 @@ export class TodoService {
 
   addTodo(text: string) {
     this.todos.set(Symbol(text), text);
+    console.log(this.todos);
   }
 
   removeTodo(id: symbol) {
